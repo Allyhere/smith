@@ -150,4 +150,9 @@ $green:rgb(100,250,200);
     }
   }
 
+@media only screen and (orientation:portrait){
+    .container{
+        overflow: hidden;
+    }
+}
 
