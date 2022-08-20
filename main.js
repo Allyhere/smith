@@ -36,7 +36,7 @@ const createNewElement = (elementName, className=undefined, content="") => {
 
 const formPhrase = () => {
     const container = document.createDocumentFragment()
-    for (i = 0; i < 4; i++) {
+    for (let i = 0; i < 4; i++) {
         const content = capitalize(felipePhrases[getRandomIndex()])
         const textElement = createNewElement("p", "text", content)
         phrase.push(content)
