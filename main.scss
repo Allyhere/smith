@@ -27,10 +27,20 @@
     --c-background: hsl(0, 0%, 15%);
     --c-foreground: hsl(240, 100%, 96%);
 
+    --f-title: 2.8rem;
+    --f-subtitle: 1.8rem;
+    --f-text: 3.6rem;
+    --f-small: 1rem;
+    
     --title-font: 'Playfair Display', serif;
     --copy-font:  'Yeseva One', cursive;
     --detail-font: 'Lato', sans-serif;
     --transition-speed: 300ms ease-in-out;
+    @media (max-width: 600px) {
+        --f-title: 2rem;
+        --f-subtitle: 1.5rem;
+        --f-text: 2.4rem;
+    }
     @media (prefers-reduced-motion) { --transition-speed: linear; }
 
     line-height: 1.5;
@@ -74,23 +84,23 @@ body {
     color: var(--c-title);
     font-family: var(--title-font);
     font-weight: black;
-    font-size: 2.8rem;
+    font-size: var(--f-title);
 }
 
 .subtitle {
     font-family: var(--detail-font);
-    font-size: 1.8rem;
+    font-size: var(--f-subtitle);
 }
 
 .text {
     font-family: var(--copy-font);
-    font-size: 3.6rem;
+    font-size: var(--f-text);
 }
 
 .small {
     justify-self: center;
     color: var(--c-foreground);
-    font-size: 1rem;
+    font-size: var(--f-subtitle);
     font-family: var(--detail-font);
 }
 
